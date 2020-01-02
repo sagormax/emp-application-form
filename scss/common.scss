@@ -1,0 +1,51 @@
+@import "variable";
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+header {
+  margin-top: 30px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heading {
+      h1 {
+        font-size: 35px;
+        font-style: italic;
+        font-weight: 900;
+        color: $primary-color;
+        margin: 0;
+      }
+    }
+    .note {
+      width: 335px;
+      p {
+        color: $primary-color;
+        font-size: 1em;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+    }
+    .logo {
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+
+section {
+  margin-top: 20px;
+  .form-wrapper {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+  }
+}
