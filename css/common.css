@@ -30,12 +30,15 @@ header {
 section {
   margin-top: 20px; }
   section .section-header {
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
     section .section-header .heading {
       position: relative;
-      background: #ffffff; }
+      font-size: 20px;
+      font-weight: 900;
+      font-style: italic;
+      color: #06519d; }
   section .form-wrapper {
     padding: 10px 20px;
-    border: 1px solid #dddddd; }
+    border: 1px solid rgba(6, 81, 157, 0.3); }
     section .form-wrapper label {
       text-transform: capitalize; }
