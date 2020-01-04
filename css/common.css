@@ -29,6 +29,13 @@ header {
 
 section {
   margin-top: 20px; }
+  section .section-header {
+    margin-bottom: 15px; }
+    section .section-header .heading {
+      position: relative;
+      background: #ffffff; }
   section .form-wrapper {
     padding: 10px 20px;
-    border: 1px solid #ddd; }
+    border: 1px solid #dddddd; }
+    section .form-wrapper label {
+      text-transform: capitalize; }
