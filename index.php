@@ -376,31 +376,31 @@
           <div class="col-2">
             <div class="form-group">
               <label for="empFromTo">From ~ TO</label>
-              <input type="text" class="form-control" id="empFromTo1" name="empFromTo1" placeholder="05/2019~12/19">
+              <input type="text" class="form-control" id="empFromTo" name="empFromTo[]" placeholder="05/2019~12/19">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label for="nameAndAddressEmployer">Employer Name and Address</label>
-              <input type="text" class="form-control" id="nameAndAddressEmployer1" name="nameAndAddressEmployer1">
+              <input type="text" class="form-control" id="nameAndAddressEmployer" name="nameAndAddressEmployer[]">
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="formerSalary">Salary</label>
-              <input type="text" class="form-control" id="formerSalary1" name="formerSalary1">
+              <input type="text" class="form-control" id="formerSalary" name="formerSalary[]">
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="formerPosition">Position</label>
-              <input type="text" class="form-control" id="formerPosition1" name="formerPosition1">
+              <input type="text" class="form-control" id="formerPosition" name="formerPosition[]">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label for="reasonForLeaving">Reason for Leaving</label>
-              <input type="text" class="form-control" id="reasonForLeaving1" name="reasonForLeaving1">
+              <input type="text" class="form-control" id="reasonForLeaving" name="reasonForLeaving[]">
             </div>
           </div>
         </div>
@@ -408,31 +408,31 @@
           <div class="col-2">
             <div class="form-group">
               <label for="empFromTo">From ~ TO</label>
-              <input type="text" class="form-control" id="empFromTo2" name="empFromTo2" placeholder="05/2019~12/19">
+              <input type="text" class="form-control" id="empFromTo" name="empFromTo[]" placeholder="05/2019~12/19">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label for="nameAndAddressEmployer">Employer Name and Address</label>
-              <input type="text" class="form-control" id="nameAndAddressEmployer2" name="nameAndAddressEmployer2">
+              <input type="text" class="form-control" id="nameAndAddressEmployer" name="nameAndAddressEmployer[]">
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="formerSalary">Salary</label>
-              <input type="text" class="form-control" id="formerSalary2" name="formerSalary2">
+              <input type="text" class="form-control" id="formerSalary" name="formerSalary[]">
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="formerPosition">Position</label>
-              <input type="text" class="form-control" id="formerPosition2" name="formerPosition2">
+              <input type="text" class="form-control" id="formerPosition" name="formerPosition[]">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label for="reasonForLeaving">Reason for Leaving</label>
-              <input type="text" class="form-control" id="reasonForLeaving2" name="reasonForLeaving2">
+              <input type="text" class="form-control" id="reasonForLeaving" name="reasonForLeaving[]">
             </div>
           </div>
         </div>
@@ -440,31 +440,31 @@
           <div class="col-2">
             <div class="form-group">
               <label for="empFromTo">From ~ TO</label>
-              <input type="text" class="form-control" id="empFromTo3" name="empFromTo3" placeholder="05/2019~12/19">
+              <input type="text" class="form-control" id="empFromTo" name="empFromTo[]" placeholder="05/2019~12/19">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label for="nameAndAddressEmployer">Employer Name and Address</label>
-              <input type="text" class="form-control" id="nameAndAddressEmployer3" name="nameAndAddressEmployer3">
+              <input type="text" class="form-control" id="nameAndAddressEmployer" name="nameAndAddressEmployer[]">
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="formerSalary">Salary</label>
-              <input type="text" class="form-control" id="formerSalary3" name="formerSalary3">
+              <input type="text" class="form-control" id="formerSalary" name="formerSalary[]">
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="formerPosition">Position</label>
-              <input type="text" class="form-control" id="formerPosition3" name="formerPosition3">
+              <input type="text" class="form-control" id="formerPosition" name="formerPosition[]">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label for="reasonForLeaving">Reason for Leaving</label>
-              <input type="text" class="form-control" id="reasonForLeaving3" name="reasonForLeaving3">
+              <input type="text" class="form-control" id="reasonForLeaving" name="reasonForLeaving[]">
             </div>
           </div>
         </div>
@@ -472,31 +472,31 @@
           <div class="col-2">
             <div class="form-group">
               <label for="empFromTo">From ~ TO</label>
-              <input type="text" class="form-control" id="empFromTo4" name="empFromTo4" placeholder="05/2019~12/19">
+              <input type="text" class="form-control" id="empFromTo" name="empFromTo[]" placeholder="05/2019~12/19">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label for="nameAndAddressEmployer">Employer Name and Address</label>
-              <input type="text" class="form-control" id="nameAndAddressEmployer4" name="nameAndAddressEmployer4">
+              <input type="text" class="form-control" id="nameAndAddressEmployer" name="nameAndAddressEmployer[]">
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="formerSalary">Salary</label>
-              <input type="text" class="form-control" id="formerSalary4" name="formerSalary4">
+              <input type="text" class="form-control" id="formerSalary" name="formerSalary[]">
             </div>
           </div>
           <div class="col-2">
             <div class="form-group">
               <label for="formerPosition">Position</label>
-              <input type="text" class="form-control" id="formerPosition4" name="formerPosition4">
+              <input type="text" class="form-control" id="formerPosition" name="formerPosition[]">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label for="reasonForLeaving">Reason for Leaving</label>
-              <input type="text" class="form-control" id="reasonForLeaving4" name="reasonForLeaving4">
+              <input type="text" class="form-control" id="reasonForLeaving" name="reasonForLeaving[]">
             </div>
           </div>
         </div>
@@ -508,7 +508,7 @@
       <div class="row">
         <div class="col d-flex justify-content-center">
           <button class="btn btn-warning btn-lg mr-2" type="reset">RESET</button>
-          <button class="btn btn-success btn-lg" type="submit" name="submitReg">SUBMIT</button>
+          <button class="btn btn-success btn-lg" type="submit">SUBMIT</button>
         </div>
       </div>
     </div>
