@@ -1,0 +1,17 @@
+{
+    "name": "sagormax/emp-application-form",
+    "authors": [
+        {
+            "name": "sagormax",
+            "email": "sagor.touch@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "autoload": {
+      "psr-4": {
+        "App\\": "form/"
+      }
+    }
+}
