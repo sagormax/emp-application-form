@@ -1,0 +1,71 @@
+body {
+  width: 790px; }
+
+.container-table {
+  border: 1px solid #000000;
+  padding: 0 5px;
+  background: #ffffff; }
+
+.header {
+  margin: 30px 0 0;
+  padding: 10px 10px 0;
+  background: #ffffff;
+  width: 100%; }
+  .header .heading {
+    width: 40%; }
+    .header .heading h1 {
+      font-size: 25px;
+      font-style: italic;
+      font-weight: 900;
+      color: #06519d;
+      margin: 0; }
+  .header .note {
+    width: 50%; }
+    .header .note p {
+      color: #06519d;
+      font-size: 1em;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase; }
+  .header .logo img {
+    width: 100px; }
+
+.section-header {
+  padding: 0;
+  background: #ffffff;
+  width: 100%; }
+  .section-header .heading {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    color: #06519d; }
+
+.form-table {
+  margin: 0 0 20px;
+  padding: 10px;
+  width: 100%;
+  border-collapse: collapse; }
+  .form-table td {
+    border: 2px solid #06519d;
+    vertical-align: top;
+    height: 70px; }
+    .form-table td p {
+      text-transform: uppercase;
+      color: #06519d;
+      margin: 0;
+      padding: 5px; }
+      .form-table td p.data-value {
+        color: #000000;
+        font-weight: 900;
+        margin-top: 5px; }
+  .form-table .under-table {
+    border: 0 none;
+    width: 100%;
+    height: 90px;
+    border-collapse: unset; }
+    .form-table .under-table td {
+      border: 0 none; }
+      .form-table .under-table td:first-child {
+        border-right: 2px solid #06519d; }
