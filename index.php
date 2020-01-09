@@ -20,13 +20,13 @@
     <table class="container-table">
         <tr>
             <td>
-<!--                <table class="header">-->
-<!--                    <tr>-->
-<!--                        <td class="heading"><h1>Application for Employment</h1></td>-->
-<!--                        <td class="note"><p>pre-employment questionnaire equal opportunity employer</p></td>-->
-<!--                        <td class="logo"><img src="img/logo.png" alt="logo"></td>-->
-<!--                    </tr>-->
-<!--                </table>-->
+                <table class="header">
+                    <tr>
+                        <td class="heading" style="width: 40%"><h1>Application for Employment</h1></td>
+                        <td class="note" style="width: 50%"><p>pre-employment questionnaire equal opportunity employer</p></td>
+                        <td class="logo"><img src="img/logo.png" alt="logo"></td>
+                    </tr>
+                </table>
                 <table class="section-header">
                     <tr>
                         <td style="width: 60%">
@@ -156,6 +156,302 @@
                                     </td>
                                 </tr>
                             </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 45%">
+                            <p>Are you employed now ?</p>
+                            <p class="data-value">YES</p>
+                        </td>
+                        <td>
+                            <p>If so, may we inquire of your present employer ?</p>
+                            <p class="data-value">YES</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 45%">
+                            <p>Ever applied to this company before ?</p>
+                            <p class="data-value">YES</p>
+                        </td>
+                        <td>
+                            <table class="under-table">
+                                <tr>
+                                    <td style="width: 50%">
+                                        <p>when</p>
+                                        <p class="data-value">2019/10/12</p>
+                                    </td>
+                                    <td>
+                                        <p>where</p>
+                                        <p class="data-value">BJ IR Ltd.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="section-header">
+                    <tr>
+                        <td>
+                            <h2 class="heading">Education History :</h2>
+                        </td>
+                    </tr>
+                </table>
+                <table class="education-history form-table">
+                    <tr>
+                        <td style="width: 20%" class="color-head">
+                            &nbsp;
+                        </td>
+                        <td style="30%" class="color-head">
+                            <p>name & location of school</p>
+                        </td>
+                        <td style="10%" class="color-head">
+                            <p>Years attended</p>
+                        </td>
+                        <td style="10%" class="color-head">
+                            <p>Did you graduate</p>
+                        </td>
+                        <td style="30%" class="color-head">
+                            <p>Subjects studied</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">
+                            <p>High school</p>
+                        </td>
+                        <td style="30%">
+                            <p></p>
+                        </td>
+                        <td style="10%">
+                            <p></p>
+                        </td>
+                        <td style="10%">
+                            <p></p>
+                        </td>
+                        <td style="30%">
+                            <p></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">
+                            <p>college</p>
+                        </td>
+                        <td style="30%">
+                            <p></p>
+                        </td>
+                        <td style="10%">
+                            <p></p>
+                        </td>
+                        <td style="10%">
+                            <p></p>
+                        </td>
+                        <td style="30%">
+                            <p></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">
+                            <p>trade, business or correspondence school</p>
+                        </td>
+                        <td style="30%">
+                            <p></p>
+                        </td>
+                        <td style="10%">
+                            <p></p>
+                        </td>
+                        <td style="10%">
+                            <p></p>
+                        </td>
+                        <td style="30%">
+                            <p></p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="section-header">
+                    <tr>
+                        <td>
+                            <h2 class="heading">General Information :</h2>
+                        </td>
+                    </tr>
+                </table>
+                <table class="general-information form-table">
+                    <tr>
+                        <td>
+                            <p>subject of special study/research work</p>
+                            <p class="data-value">Web application developer / Ninja</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Special training</p>
+                            <p class="data-value">UI/UX</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Special skills</p>
+                            <p class="data-value">PHP, Mysql, WordPress</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="under-table">
+                                <tr>
+                                    <td style="width: 50%">
+                                        <p>U.S. military or naval service</p>
+                                        <p class="data-value">NO</p>
+                                    </td>
+                                    <td>
+                                        <p>Rank</p>
+                                        <p class="data-value"></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table class="section-header">
+                    <tr>
+                        <td>
+                            <h2 class="heading">Former employers :</h2>
+                        </td>
+                    </tr>
+                </table>
+                <table class="former-employers form-table">
+                    <tr>
+                        <td style="width: 20%" class="color-head">
+                            <p>Date month & year</p>
+                        </td>
+                        <td style="30%" class="color-head">
+                            <p>name & address</p>
+                        </td>
+                        <td style="10%" class="color-head">
+                            <p>salary</p>
+                        </td>
+                        <td style="10%" class="color-head">
+                            <p>position</p>
+                        </td>
+                        <td style="30%" class="color-head">
+                            <p>reason of leaving</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="under-table style2">
+                                <tr>
+                                    <td>
+                                        <p>From</p>
+                                        <p class="data-value">02/2019</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>To</p>
+                                        <p class="data-value">02/2020</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="under-table style2">
+                                <tr>
+                                    <td>
+                                        <p>From</p>
+                                        <p class="data-value">02/2019</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>To</p>
+                                        <p class="data-value">02/2020</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="under-table style2">
+                                <tr>
+                                    <td>
+                                        <p>From</p>
+                                        <p class="data-value">02/2019</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>To</p>
+                                        <p class="data-value">02/2020</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="under-table style2">
+                                <tr>
+                                    <td>
+                                        <p>From</p>
+                                        <p class="data-value">02/2019</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>To</p>
+                                        <p class="data-value">02/2020</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td>
+                            <p></p>
                         </td>
                     </tr>
                 </table>

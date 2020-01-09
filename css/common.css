@@ -6,22 +6,26 @@ body {
 
 header {
   margin-top: 30px; }
-  header .container .heading h1 {
-    font-size: 35px;
-    font-style: italic;
-    font-weight: 900;
-    color: #06519d;
-    margin: 0; }
-  header .container .note {
-    width: 335px; }
-    header .container .note p {
-      color: #06519d;
-      font-size: 1em;
-      font-weight: 900;
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container .heading h1 {
+      font-size: 35px;
       font-style: italic;
-      text-transform: uppercase; }
-  header .container .logo img {
-    width: 100px; }
+      font-weight: 900;
+      color: #06519d;
+      margin: 0; }
+    header .container .note {
+      width: 335px; }
+      header .container .note p {
+        color: #06519d;
+        font-size: 1em;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: uppercase; }
+    header .container .logo img {
+      width: 100px; }
 
 section {
   margin-top: 20px; }
