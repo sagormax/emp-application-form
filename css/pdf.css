@@ -5,26 +5,27 @@ html {
   margin: 0 auto; }
 
 body {
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 800px; }
 
 .container-table {
-  border: 1px solid #000000;
   padding: 0 5px;
   background: #ffffff; }
 
 .header {
-  margin: 0 0 5px;
+  margin: 10px 0 5px;
+  padding: 0 8px;
   background: #ffffff;
   width: 100%; }
   .header .heading h1 {
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
     font-weight: 900;
     color: #06519d;
     margin: 0; }
   .header .note p {
     color: #06519d;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 900;
     font-style: italic;
     text-transform: uppercase; }
@@ -32,9 +33,10 @@ body {
     width: 100px; }
 
 .section-header {
-  padding: 0;
+  padding: 0 8px;
   background: #ffffff;
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
   .section-header .heading {
     margin: 0;
     position: relative;
@@ -42,6 +44,19 @@ body {
     font-weight: 900;
     font-style: italic;
     color: #06519d; }
+  .section-header.ref {
+    margin-top: 20px; }
+
+.center-heading {
+  padding: 0 8px;
+  background: #ffffff;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 15px;
+  font-weight: 900;
+  font-style: italic;
+  color: #06519d;
+  text-align: center; }
 
 .form-table {
   margin: 0 0 5px;
@@ -69,6 +84,10 @@ body {
         color: #000000;
         font-weight: 900;
         margin-top: 0; }
+      .form-table td p.top-bar {
+        border-top: 1px solid #06519d; }
+        .form-table td p.top-bar.padding {
+          padding-left: 0; }
   .form-table .under-table {
     border: 0 none;
     width: 100%;
@@ -79,6 +98,20 @@ body {
     .form-table .under-table.style2 td:first-child {
       border: 0 none !important; }
     .form-table .under-table td {
+      border: 0 none;
+      border-right: 2px solid #06519d; }
+      .form-table .under-table td:last-child {
+        border-right: 0 none; }
+  .form-table.signature {
+    margin-top: 30px; }
+    .form-table.signature td {
       border: 0 none; }
-      .form-table .under-table td:first-child {
-        border-right: 2px solid #06519d; }
+
+.quote {
+  color: #06519d;
+  padding: 0 8px 5px;
+  display: block;
+  font-size: 10px; }
+
+.img {
+  max-width: 100%; }

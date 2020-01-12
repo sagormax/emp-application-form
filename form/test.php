@@ -6,7 +6,8 @@ use Dompdf\Dompdf;
 
 // instantiate and use the dompdf class
 $dompdf = new Dompdf();
-$dompdf->loadHtml(file_get_contents('../index.php'));
+$dompdf->set_option( 'dpi' , '100' );
+$dompdf->loadHtml(file_get_contents('../generate-pdf.php'));
 
 $dompdf->setBasePath('../');
 

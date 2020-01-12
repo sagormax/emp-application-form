@@ -1,6 +1,8 @@
 <?php
 require_once "bootstrap.php";
 
+use Dompdf\Dompdf;
+
 if( !isset($_POST['submitReg']) ){
     die('invalid');
 }
@@ -64,12 +66,53 @@ $data = [
     'formerSalary4'             => realString($_POST['formerSalary4']),
     'formerPosition4'           => realString($_POST['formerPosition4']),
     'reasonForLeaving4'         => realString($_POST['reasonForLeaving4']),
+    'refName1'                  => realString($_POST['refName1']),
+    'refAddress1'               => realString($_POST['refAddress1']),
+    'refBusiness1'              => realString($_POST['refBusiness1']),
+    'refYearsKnown1'            => realString($_POST['refYearsKnown1']),
+    'refName2'                  => realString($_POST['refName2']),
+    'refAddress2'               => realString($_POST['refAddress2']),
+    'refBusiness2'              => realString($_POST['refBusiness2']),
+    'refYearsKnown2'            => realString($_POST['refYearsKnown2']),
+    'refName3'                  => realString($_POST['refName3']),
+    'refAddress3'               => realString($_POST['refAddress3']),
+    'refBusiness3'              => realString($_POST['refBusiness3']),
+    'refYearsKnown3'            => realString($_POST['refYearsKnown3']),
+    'mail_send'                 => 0,
     'created_at'                => date('Y-m-d H:i:s'),
 ];
 
 $emp = new \App\Model\EmpRegistration();
 
-if( $emp->insert($data) ){
+if( $id = $emp->insert($data) ){
+
+    $uniqueName = '239539597535385032850';
+    ob_start();
+    require_once "generate-pdf.php";
+    $resp = ob_get_clean();
+    $fileName = $uniqueName . $id . '.html';
+    file_put_contents(__DIR__. '/../PDF/'.$fileName, $resp);
+
+    //exit();
+
+    // PDF generate
+    $dompdf = new Dompdf();
+    $dompdf->set_option( 'dpi' , '100' );
+
+    $dompdf->loadHtml(file_get_contents(__DIR__. '/../PDF/'.$fileName));
+    //$dompdf->setBasePath('../');
+
+    // (Optional) Setup the paper size and orientation
+    //$dompdf->setPaper('A4', 'landscape');
+
+    // Render the HTML as PDF
+    $dompdf->render();
+
+    // Output the generated PDF to Browser
+    //$dompdf->stream();
+    $output = $dompdf->output();
+    file_put_contents(__DIR__. '/../PDF/'. $uniqueName . $id . '.pdf', $output);
+
     header('Location: ../complete.html');
 }
 else {
