@@ -41,11 +41,18 @@ abstract class Base extends Connection
     /**
      * Get first row
      *
+     * @param array $where
      * @return array
      */
-    public function first()
+    public function first($where = null)
     {
-        $this->make("SELECT * FROM {$this->table} ORDER BY {$this->primary_key} DESC LIMIT 1");
+        $query_str = "SELECT * FROM {$this->table} ";
+        if( $where != null ){
+            $query_str = $query_str . $where;
+        }
+
+        $query_str = $query_str . "ORDER BY {$this->primary_key} DESC LIMIT 1";
+        $this->make($query_str);
         return $this->fetch();
     }
 
@@ -57,14 +64,31 @@ abstract class Base extends Connection
      */
     public function insert($data)
     {
-        $bind = array_map(function ($item){
-            return ':'.$item;
-        }, array_keys($data));
-
+        $bind   = $this->makeBind($data);
         $string = "INSERT INTO {$this->table} (".implode(',', array_keys($data)).") VALUES (".implode(',', $bind).")";
 
         $this->make($string);
         return $this->prepare->execute($data) ? $this->db->lastInsertId() : false;
+    }
+
+    /**
+     * Update row
+     *
+     * @param $data
+     * @param $id
+     * @return mixed
+     */
+    public function update($data, $id)
+    {
+        $bind   = $this->makeBind($data, true);
+        $string = "UPDATE {$this->table} SET ".implode(',', $bind)." WHERE {$this->primary_key}=:{$this->primary_key}";
+
+        $this->make($string);
+        $exe    = array_merge($data, [$this->primary_key => $id]);
+
+        $this->prepare->execute($exe);
+
+        return $this->prepare->rowCount();
     }
 
     /**
@@ -95,5 +119,19 @@ abstract class Base extends Connection
     private function fetchAll()
     {
         return $this->prepare->execute() ? $this->prepare->fetchAll() : [];
+    }
+
+    /**
+     * Get Bind Property
+     *
+     * @param array $data
+     * @param bool $update
+     * @return array
+     */
+    private function makeBind($data = [], $update = false)
+    {
+        return array_map(function ($item) use ($update) {
+            return $update ? $item.'=:'.$item : ':'.$item;
+        }, array_keys($data));
     }
 }

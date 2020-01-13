@@ -96,7 +96,7 @@ require_once "bootstrap.php";
                             <tr>
                                 <td align="center">
                                     <p>
-                                        <a href="<?php echo getenv('BASE_URL').'PDF/'; ?>" class="button">DOWNLOAD APPLICATION</a>
+                                        <a href="<?php echo getenv('BASE_URL').'PDF/'.$PDF_LINK; ?>" class="button">DOWNLOAD APPLICATION</a>
                                     </p>
                                 </td>
                             </tr>

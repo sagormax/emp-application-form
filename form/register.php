@@ -86,7 +86,7 @@ $emp = new \App\Model\EmpRegistration();
 
 if( $id = $emp->insert($data) ){
 
-    $uniqueName = '239539597535385032850';
+    $uniqueName = getenv('PDF_UNIQUE_NUMBER');
     ob_start();
     require_once "generate-pdf.php";
     $resp = ob_get_clean();
