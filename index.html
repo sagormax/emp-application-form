@@ -116,19 +116,25 @@
             <div class="col-3">
               <div class="form-group">
                 <label for="phoneNumber">Phone Number</label>
-                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required="required">
+                <input type="phone" class="form-control" id="phoneNumber" name="phoneNumber" onkeyup="formatPhone(this)" required="required">
               </div>
             </div>
             <div class="col-3">
               <div class="form-group">
                 <label for="secondaryPhone">Secondary Phone no</label>
-                <input type="text" class="form-control" id="secondaryPhone" name="secondaryPhone">
+                <input type="phone" class="form-control" id="secondaryPhone" onkeyup="formatPhone(this)" name="secondaryPhone">
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-3">
               <div class="form-group">
-                <label for="referredBy">Referred By</label>
-                <input type="text" class="form-control" id="referredBy" name="referredBy">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="form-group">
+                  <label for="referredBy">Referred By</label>
+                  <input type="text" class="form-control" id="referredBy" name="referredBy">
               </div>
             </div>
           </div>
@@ -152,7 +158,7 @@
             <div class="col">
               <div class="form-group">
                 <label for="preferredStartDate">Date You Can Start</label>
-                <input type="text" class="form-control" id="preferredStartDate" name="preferredStartDate" required="required">
+                <input type="date" class="form-control" id="preferredStartDate" name="preferredStartDate" required="required">
               </div>
             </div>
             <div class="col">
@@ -246,7 +252,7 @@
             <div class="col-2">
               <p>Did You Graduate?</p>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="schoolGraduate" name="schoolGraduate">
+                <input type="checkbox" class="custom-control-input" value="YES" id="schoolGraduate" name="schoolGraduate">
                 <label class="custom-control-label" for="schoolGraduate">Yes</label>
               </div>
             </div>
@@ -273,7 +279,7 @@
             <div class="col-2">
               <p>Did You Graduate?</p>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="collegeGraduate" name="collegeGraduate">
+                <input type="checkbox" class="custom-control-input" value="YES" id="collegeGraduate" name="collegeGraduate">
                 <label class="custom-control-label" for="collegeGraduate">Yes</label>
               </div>
             </div>
@@ -302,7 +308,7 @@
               <p>Did You Graduate?</p>
               <br>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="otherGraduate" name="otherGraduate">
+                <input type="checkbox" class="custom-control-input" value="YES" id="otherGraduate" name="otherGraduate">
                 <label class="custom-control-label" for="otherGraduate">Yes</label>
               </div>
             </div>
@@ -607,6 +613,16 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+      function formatPhone(obj) {
+          var numbers = obj.value.replace(/\D/g, ''),
+              char = {0:'(',3:') ',6:'-'};
+          obj.value = '';
+          for (var i = 0; i < numbers.length; i++) {
+              obj.value += (char[i]||'') + numbers[i];
+          }
+      }
+  </script>
 </body>
 
 </html>

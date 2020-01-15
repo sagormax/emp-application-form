@@ -87,9 +87,10 @@ require_once "bootstrap.php";
 
                         <h2>Dear Applicant,</h2>
 
-                        <p>Thank you very much for your participation. </p>
+                        <p>Your application has been received.</p>
                         <p>
-                            We will investigate of all statements and the references and employers listed that give you any.
+                            Thanks for your interest in working at M&W Cuisine.
+                            You will be contacted after reviewing your application.
                         </p>
 
                         <table>
@@ -102,7 +103,8 @@ require_once "bootstrap.php";
                             </tr>
                         </table>
 
-                        <p>By the way, if you're wondering where you can find more of this fine meaty filler, visit <br><br> <a href="<?php echo getenv('BASE_URL'); ?>"><?php echo getenv('SITE_NAME'); ?></a></p>
+                        <p>Employment history and references will be verified.<br><br> Thank you,</p>
+                        <p><b><em>M&W Management and Staff</em></b></p>
 
                     </td>
                 </tr>

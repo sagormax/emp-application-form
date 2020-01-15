@@ -47,7 +47,7 @@
                             <h2 class="heading">Personal Information :</h2>
                         </td>
                         <td>
-                            <h2 class="heading">Date :</h2>
+                            <h2 class="heading">Date : <?php echo date('d M, Y'); ?></h2>
                         </td>
                     </tr>
                 </table>

@@ -31,7 +31,7 @@ try {
     $mail->SetFrom(getenv('MAIL_FROM'), getenv('SITE_NAME'));
     $mail->AddReplyTo(getenv('MAIL_REPLY_TO'),getenv('SITE_NAME'));
 
-    $mail->addAddress("besora6483@clsn1.com", 'NAME');
+    $mail->addAddress($user['email'], 'APPLICATION USER');
     $mail->addCC(getenv('MAIL_CC'), getenv('SITE_NAME'));
 
     $mail->isHTML(true);                                  // Set email format to HTML

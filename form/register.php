@@ -20,6 +20,7 @@ $data = [
     'permanentZipCode'          => realString($_POST['permanentZipCode']),
     'phoneNumber'               => realString($_POST['phoneNumber']),
     'secondaryPhone'            => realString($_POST['secondaryPhone']),
+    'email'                     => realString($_POST['email']),
     'referredBy'                => realString($_POST['referredBy']),
     'position'                  => realString($_POST['position']),
     'preferredStartDate'        => realString($_POST['preferredStartDate']),
@@ -97,7 +98,9 @@ if( $id = $emp->insert($data) ){
 
     // PDF generate
     $dompdf = new Dompdf();
-    $dompdf->set_option( 'dpi' , '100' );
+    //$dompdf->set_option( 'dpi' , '100' );
+
+    sleep(2);
 
     $dompdf->loadHtml(file_get_contents(__DIR__. '/../PDF/'.$fileName));
     //$dompdf->setBasePath('../');
@@ -113,6 +116,7 @@ if( $id = $emp->insert($data) ){
     $output = $dompdf->output();
     file_put_contents(__DIR__. '/../PDF/'. $uniqueName . $id . '.pdf', $output);
 
+    sleep(5);
     header('Location: ../complete.html');
 }
 else {

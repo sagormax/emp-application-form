@@ -44,6 +44,14 @@
       <div class="container">
           <h1 class="display-4">Registration Success</h1>
           <p class="lead">Please check your email, We will contact you soon.</p>
+
+          <a href="/" type="button" class="btn btn-success mt-5">GO BACK</a>
+
+          <div class="row">
+              <div class="col mt-5">
+                  <code>Redirecting to home page with in 5 sec...</code>
+              </div>
+          </div>
       </div>
   </div>
 
@@ -52,6 +60,11 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+      setTimeout(function () {
+        window.location.href = '/';
+      }, 5000);
+  </script>
 </body>
 
 </html>
