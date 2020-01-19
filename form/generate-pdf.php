@@ -154,18 +154,18 @@
                     <tr>
                         <td style="width: 45%">
                             <p>position</p>
-                            <p class="data-value"><?php echo $data['position']; ?></p>
+                            <p class="data-value"><?php echo $data['position']; ?>&nbsp;</p>
                         </td>
                         <td>
                             <table class="under-table">
                                 <tr>
                                     <td style="width: 50%">
                                         <p>date you can start</p>
-                                        <p class="data-value"><?php echo $data['preferredStartDate']; ?></p>
+                                        <p class="data-value"><?php echo $data['preferredStartDate']; ?>&nbsp;</p>
                                     </td>
                                     <td>
                                         <p>Salary desired</p>
-                                        <p class="data-value"><?php echo $data['salaryDesired']; ?></p>
+                                        <p class="data-value"><?php echo $data['salaryDesired']; ?>&nbsp;</p>
                                     </td>
                                 </tr>
                             </table>
@@ -174,28 +174,28 @@
                     <tr>
                         <td style="width: 45%">
                             <p>Are you employed now ?</p>
-                            <p class="data-value"><?php echo $data['employmentStatus']; ?></p>
+                            <p class="data-value"><?php echo $data['employmentStatus']; ?>&nbsp;</p>
                         </td>
                         <td>
                             <p>If so, may we inquire of your present employer ?</p>
-                            <p class="data-value"><?php echo $data['employerInquire']; ?></p>
+                            <p class="data-value"><?php echo $data['employerInquire']; ?>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 45%">
                             <p>Ever applied to this company before ?</p>
-                            <p class="data-value"><?php echo $data['appliedBefore']; ?></p>
+                            <p class="data-value"><?php echo $data['appliedBefore']; ?>&nbsp;</p>
                         </td>
                         <td>
                             <table class="under-table">
                                 <tr>
                                     <td style="width: 50%">
                                         <p>when</p>
-                                        <p class="data-value"><?php echo $data['whenToWork']; ?></p>
+                                        <p class="data-value"><?php echo $data['whenToWork']; ?>&nbsp;</p>
                                     </td>
                                     <td>
                                         <p>where</p>
-                                        <p class="data-value"><?php echo $data['whereToWork']; ?></p>
+                                        <p class="data-value"><?php echo $data['whereToWork']; ?>&nbsp;</p>
                                     </td>
                                 </tr>
                             </table>
@@ -232,16 +232,16 @@
                             <p>High school</p>
                         </td>
                         <td style="30%">
-                            <p><?php echo $data['highSchool']; ?></p>
+                            <p><?php echo $data['highSchool']; ?>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['schoolYearsAttended']; ?></p>
+                            <p><?php echo $data['schoolYearsAttended']; ?>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['schoolGraduate']; ?></p>
+                            <p><?php echo $data['schoolGraduate']; ?>&nbsp;</p>
                         </td>
                         <td style="30%">
-                            <p><?php echo $data['subjectOfSchool']; ?></p>
+                            <p><?php echo $data['subjectOfSchool']; ?>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
@@ -249,16 +249,16 @@
                             <p>college</p>
                         </td>
                         <td style="30%">
-                            <p><?php echo $data['college']; ?></p>
+                            <p><?php echo $data['college']; ?>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['collegeYearsAttended']; ?></p>
+                            <p><?php echo $data['collegeYearsAttended']; ?>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['collegeGraduate']; ?></p>
+                            <p><?php echo $data['collegeGraduate']; ?>&nbsp;</p>
                         </td>
                         <td style="30%">
-                            <p><?php echo $data['subjectOfCollege']; ?></p>
+                            <p><?php echo $data['subjectOfCollege']; ?>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
@@ -266,16 +266,16 @@
                             <p>trade, business or correspondence school</p>
                         </td>
                         <td style="30%">
-                            <p><?php echo $data['tradeOrBusiness']; ?></p>
+                            <p><?php echo $data['tradeOrBusiness']; ?>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['otherYearsAttended']; ?></p>
+                            <p><?php echo $data['otherYearsAttended']; ?>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['otherGraduate']; ?></p>
+                            <p><?php echo $data['otherGraduate']; ?>&nbsp;</p>
                         </td>
                         <td style="30%">
-                            <p><?php echo $data['subjectOfOther']; ?></p>
+                            <p><?php echo $data['subjectOfOther']; ?>&nbsp;</p>
                         </td>
                     </tr>
                 </table>
@@ -290,19 +290,19 @@
                     <tr>
                         <td>
                             <p>subject of special study/research work</p>
-                            <p class="data-value"><?php echo $data['subjectOfSpecialStudy']; ?></p>
+                            <p class="data-value"><?php echo $data['subjectOfSpecialStudy']; ?>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p>Special training</p>
-                            <p class="data-value"><?php echo $data['specialTraining']; ?></p>
+                            <p class="data-value"><?php echo $data['specialTraining']; ?>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p>Special skills</p>
-                            <p class="data-value"><?php echo $data['specialSkills']; ?></p>
+                            <p class="data-value"><?php echo $data['specialSkills']; ?>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
@@ -311,11 +311,11 @@
                                 <tr>
                                     <td style="width: 50%">
                                         <p>U.S. military or naval service</p>
-                                        <p class="data-value"><?php echo $data['militaryOrNaval']; ?></p>
+                                        <p class="data-value"><?php echo $data['militaryOrNaval']; ?>&nbsp;</p>
                                     </td>
                                     <td>
                                         <p>Rank</p>
-                                        <p class="data-value"><?php echo $data['militaryOrNavalRank']; ?></p>
+                                        <p class="data-value"><?php echo $data['militaryOrNavalRank']; ?>&nbsp;</p>
                                     </td>
                                 </tr>
                             </table>
@@ -350,76 +350,81 @@
                     <tr>
                         <td>
                             <p>From ~ To</p>
-                            <p class="data-value"><?php echo $data['empFromTo1']; ?></p>
+                            <p class="data-value"><?php echo $data['empFromTo1']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['nameAndAddressEmployer1']; ?></p>
+                            <p class="data-value"><?php echo $data['nameAndAddressEmployer1']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['formerSalary1']; ?></p>
+                            <p class="data-value"><?php echo $data['formerSalary1']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['formerPosition1']; ?></p>
+                            <p class="data-value"><?php echo $data['formerPosition1']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['reasonForLeaving1']; ?></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>From ~ To</p>
-                            <p class="data-value"><?php echo $data['empFromTo2']; ?></p>
-                        </td>
-                        <td>
-                            <p class="data-value"><?php echo $data['nameAndAddressEmployer2']; ?></p>
-                        </td>
-                        <td>
-                            <p class="data-value"><?php echo $data['formerSalary2']; ?></p>
-                        </td>
-                        <td>
-                            <p class="data-value"><?php echo $data['formerPosition2']; ?></p>
-                        </td>
-                        <td>
-                            <p class="data-value"><?php echo $data['reasonForLeaving2']; ?></p>
+                            <p class="data-value"><?php echo $data['reasonForLeaving1']; ?>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p>From ~ To</p>
-                            <p class="data-value"><?php echo $data['empFromTo3']; ?></p>
+                            <p class="data-value"><?php echo $data['empFromTo2']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['nameAndAddressEmployer3']; ?></p>
+                            <p class="data-value"><?php echo $data['nameAndAddressEmployer2']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['formerSalary3']; ?></p>
+                            <p class="data-value"><?php echo $data['formerSalary2']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['formerPosition3']; ?></p>
+                            <p class="data-value"><?php echo $data['formerPosition2']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['reasonForLeaving3']; ?></p>
+                            <p class="data-value"><?php echo $data['reasonForLeaving2']; ?>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p>From ~ To</p>
-                            <p class="data-value"><?php echo $data['empFromTo4']; ?></p>
+                            <p class="data-value"><?php echo $data['empFromTo3']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['nameAndAddressEmployer4']; ?></p>
+                            <p class="data-value"><?php echo $data['nameAndAddressEmployer3']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['formerSalary4']; ?></p>
+                            <p class="data-value"><?php echo $data['formerSalary3']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['formerPosition4']; ?></p>
+                            <p class="data-value"><?php echo $data['formerPosition3']; ?>&nbsp;</p>
                         </td>
                         <td>
-                            <p class="data-value"><?php echo $data['reasonForLeaving4']; ?></p>
+                            <p class="data-value"><?php echo $data['reasonForLeaving3']; ?>&nbsp;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>From ~ To</p>
+                            <p class="data-value"><?php echo $data['empFromTo4']; ?>&nbsp;</p>
+                        </td>
+                        <td>
+                            <p class="data-value"><?php echo $data['nameAndAddressEmployer4']; ?>&nbsp;</p>
+                        </td>
+                        <td>
+                            <p class="data-value"><?php echo $data['formerSalary4']; ?>&nbsp;</p>
+                        </td>
+                        <td>
+                            <p class="data-value"><?php echo $data['formerPosition4']; ?>&nbsp;</p>
+                        </td>
+                        <td>
+                            <p class="data-value"><?php echo $data['reasonForLeaving4']; ?>&nbsp;</p>
                         </td>
                     </tr>
                 </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
@@ -448,55 +453,55 @@
                     </tr>
                     <tr>
                         <td>
-                            <p><?php echo $data['refName1']; ?></p>
+                            <p><?php echo $data['refName1']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td>
-                            <p><?php echo $data['refAddress1']; ?></p>
+                            <p><?php echo $data['refAddress1']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td>
-                            <p><?php echo $data['refBusiness1']; ?></p>
+                            <p><?php echo $data['refBusiness1']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['refYearsKnown1']; ?></p>
+                            <p><?php echo $data['refYearsKnown1']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p><?php echo $data['refName2']; ?></p>
+                            <p><?php echo $data['refName2']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td>
-                            <p><?php echo $data['refAddress2']; ?></p>
+                            <p><?php echo $data['refAddress2']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td>
-                            <p><?php echo $data['refBusiness2']; ?></p>
+                            <p><?php echo $data['refBusiness2']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['refYearsKnown2']; ?></p>
+                            <p><?php echo $data['refYearsKnown2']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p><?php echo $data['refName3']; ?></p>
+                            <p><?php echo $data['refName3']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td>
-                            <p><?php echo $data['refAddress3']; ?></p>
+                            <p><?php echo $data['refAddress3']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td>
-                            <p><?php echo $data['refBusiness3']; ?></p>
+                            <p><?php echo $data['refBusiness3']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                         <td style="10%">
-                            <p><?php echo $data['refYearsKnown3']; ?></p>
+                            <p><?php echo $data['refYearsKnown3']; ?>&nbsp;</p>
                             <p>&nbsp;</p>
                         </td>
                     </tr>
@@ -509,7 +514,7 @@
                     </tr>
                 </table>
                 <span class="quote">
-                    “certify that the facts contained in this application are true and complete to the best of my knowledge and understand that, if employed,
+                    “I certify that the facts contained in this application are true and complete to the best of my knowledge and understand that, if employed,
                     falsified statements on this application shall be grounds for dismissal.
                 </span>
                 <span class="quote">
