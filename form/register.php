@@ -7,6 +7,23 @@ if( !isset($_POST['submitReg']) ){
     die('invalid');
 }
 
+$cvUniqueName = '';
+if($_FILES["cv_file"]){
+    $target_dir = "../uploads/";
+    $target_file = $target_dir . basename($_FILES["cv_file"]["name"]);
+    $cvFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $cvUniqueName = time().uniqid(rand()) . '.' . $cvFileType;
+
+    if($cvFileType != "doc" && $cvFileType != "docx" && $cvFileType != "pdf" ) {
+        die("Invalid CV file type");
+    }
+
+    if (!move_uploaded_file($_FILES["cv_file"]["tmp_name"], $target_dir . $cvUniqueName)) {
+        die('File upload failed. Try again later');
+    }
+
+}
+
 $data = [
     'name'                      => realString($_POST['name']),
     'ssn'                       => realString($_POST['ssn']),
@@ -79,6 +96,7 @@ $data = [
     'refAddress3'               => realString($_POST['refAddress3']),
     'refBusiness3'              => realString($_POST['refBusiness3']),
     'refYearsKnown3'            => realString($_POST['refYearsKnown3']),
+    'cv_name'                   => $cvUniqueName,
     'mail_send'                 => 0,
     'created_at'                => date('Y-m-d H:i:s'),
 ];

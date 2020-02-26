@@ -39,7 +39,7 @@
       </div>
     </div>
   </header>
-  <form action="form/register.php" method="post">
+  <form action="form/register.php" method="post" enctype="multipart/form-data">
     <section class="personal-information">
       <div class="container">
         <div class="section-header">
@@ -591,6 +591,24 @@
                       <div class="form-group">
                           <label for="refYearsKnown3">Years Known</label>
                           <input type="text" class="form-control" id="refYearsKnown3" name="refYearsKnown3">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="reference mb-3">
+      <div class="container">
+          <div class="section-header">
+              <h2 class="heading">Upload : </h2>
+          </div>
+          <div class="form-wrapper">
+              <div class="row">
+                  <div class="col">
+                      <div class="form-group">
+                          <label for="upload_cv">Attach Your CV(docx/pdf)</label>
+                          <input type="file" class="form-control" name="cv_file" id="upload_cv" required="required">
                       </div>
                   </div>
               </div>

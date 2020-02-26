@@ -101,6 +101,13 @@ require_once "bootstrap.php";
                                     </p>
                                 </td>
                             </tr>
+                            <tr>
+                                <td align="center">
+                                    <p>
+                                        <a href="<?php echo getenv('BASE_URL').$UPLOADED_CV_LINK; ?>" class="button">Uploaded CV</a>
+                                    </p>
+                                </td>
+                            </tr>
                         </table>
 
                         <p>Employment history and references will be verified.<br><br> Thank you,</p>

@@ -39,6 +39,7 @@ try {
 
     ob_start();
     $PDF_LINK = getenv('PDF_UNIQUE_NUMBER') . $user['id'] . '.pdf';
+    $UPLOADED_CV_LINK = 'uploads/' . $user['cv_name'];
     include "mail_body.php";
     $mailBody       = ob_get_clean();
     $mail->Body     = $mailBody;
