@@ -3,6 +3,7 @@ require_once "bootstrap.php";
 
 date_default_timezone_set('ASIA/DHAKA');
 
+use Dompdf\Dompdf;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -16,6 +17,29 @@ if ($user === false){
 //var_dump($user);
 //var_dump($emp->update(['mail_send' => 1],  5));
 //exit();
+
+
+// PDF generate
+$fileName = getenv('PDF_UNIQUE_NUMBER') . $user['id'];
+$dompdf = new Dompdf();
+//$dompdf->set_option( 'dpi' , '100' );
+$dompdf->set_option( 'isHtml5ParserEnabled' , true );
+$dompdf->set_option( 'isRemoteEnabled' , true );
+
+$dompdf->loadHtml(file_get_contents(__DIR__. '/../PDF/'.$fileName . ".html"));
+//$dompdf->setBasePath('../');
+
+// (Optional) Setup the paper size and orientation
+//$dompdf->setPaper('A4', 'landscape');
+
+// Render the HTML as PDF
+$dompdf->render();
+
+// Output the generated PDF to Browser
+//$dompdf->stream();
+$output = $dompdf->output();
+file_put_contents(__DIR__. '/../PDF/'. $fileName . '.pdf', $output);
+
 
 $mail = new PHPMailer(true);
 try {
@@ -38,7 +62,7 @@ try {
     $mail->Subject  = getenv('MAIL_SUBJECT');
 
     ob_start();
-    $PDF_LINK = getenv('PDF_UNIQUE_NUMBER') . $user['id'] . '.pdf';
+    $PDF_LINK = $fileName . '.pdf';
     $UPLOADED_CV_LINK = 'uploads/' . $user['cv_name'];
     include "mail_body.php";
     $mailBody       = ob_get_clean();

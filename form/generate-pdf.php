@@ -21,11 +21,11 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="manifest" href="<?php echo getenv('BASE_URL'); ?>site.webmanifest">
+  <link rel="apple-touch-icon" href="<?php echo getenv('BASE_URL'); ?>icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="../css/pdf.css">
+  <link rel="stylesheet" href="<?php echo getenv('BASE_URL'); ?>css/pdf.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -38,7 +38,7 @@
                     <tr>
                         <td class="heading" style="width: 50%"><h1>Application for Employment</h1></td>
                         <td class="note" style="width: 40%"><p>pre-employment questionnaire equal opportunity employer</p></td>
-                        <td class="logo"><img src="../img/logo.png" alt="logo"></td>
+                        <td class="logo"><img src="<?php echo getenv('BASE_URL'); ?>img/logo.jpg" alt="logo"></td>
                     </tr>
                 </table>
                 <table class="section-header">
@@ -554,7 +554,7 @@
                 <table class="signature form-table">
                     <tr>
                         <td>
-                            <img class="img" src="../img/donot.png" alt="do-not">
+                            <img class="img" src="<?php echo getenv('BASE_URL'); ?>img/donot.png" alt="do-not">
                         </td>
                     </tr>
                 </table>
@@ -701,8 +701,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-    <script src="../js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="<?php echo getenv('BASE_URL'); ?>js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="<?php echo getenv('BASE_URL'); ?>js/main.js"></script>
 </body>
 
 </html>

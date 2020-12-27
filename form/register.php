@@ -1,8 +1,6 @@
 <?php
 require_once "bootstrap.php";
 
-use Dompdf\Dompdf;
-
 if( !isset($_POST['submitReg']) ){
     die('invalid');
 }
@@ -112,29 +110,6 @@ if( $id = $emp->insert($data) ){
     $fileName = $uniqueName . $id . '.html';
     file_put_contents(__DIR__. '/../PDF/'.$fileName, $resp);
 
-    //exit();
-
-    // PDF generate
-    $dompdf = new Dompdf();
-    //$dompdf->set_option( 'dpi' , '100' );
-
-    sleep(2);
-
-    $dompdf->loadHtml(file_get_contents(__DIR__. '/../PDF/'.$fileName));
-    //$dompdf->setBasePath('../');
-
-    // (Optional) Setup the paper size and orientation
-    //$dompdf->setPaper('A4', 'landscape');
-
-    // Render the HTML as PDF
-    $dompdf->render();
-
-    // Output the generated PDF to Browser
-    //$dompdf->stream();
-    $output = $dompdf->output();
-    file_put_contents(__DIR__. '/../PDF/'. $uniqueName . $id . '.pdf', $output);
-
-    sleep(5);
     header('Location: ../complete.html');
 }
 else {

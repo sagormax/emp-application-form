@@ -1,6 +1,7 @@
-.idea
 node_modules
+uploads
+vendor
+PDF
 
-/vendor/
+.idea
 .env
-/PDF/
